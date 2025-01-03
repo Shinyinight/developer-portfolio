@@ -16,6 +16,9 @@ import {
     FaInstagram,
     FaGitlab,
     FaMediumM,
+    FaTelegram,
+    FaSkype,
+    FaWhatsapp
 } from 'react-icons/fa';
 import { AiOutlineSend, AiOutlineCheckCircle } from 'react-icons/ai';
 import { FiPhone, FiAtSign } from 'react-icons/fi';
@@ -363,6 +366,7 @@ function Contacts() {
                                     <FaMediumM aria-label='Medium' />
                                 </a>
                             )}
+                            
                             {socialsData.blogger && (
                                 <a
                                     href={socialsData.blogger}
@@ -423,6 +427,37 @@ function Contacts() {
                                     <FaGitlab aria-label='GitLab' />
                                 </a>
                             )}
+                            {socialsData.telegram && (
+                                <a
+                                    href={socialsData.telegram}
+                                    target='_blank'
+                                    rel='noreferrer'
+                                    className={classes.socialIcon}
+                                >
+                                    <FaTelegram aria-label='Telegram' />
+                                </a>
+                            )}
+                            {socialsData.whatsapp && (
+                                <a
+                                    href={socialsData.whatsapp}
+                                    target='_blank'
+                                    rel='noreferrer'
+                                    className={classes.socialIcon}
+                                >
+                                    <FaWhatsapp aria-label='Whatsapp' />
+                                </a>
+                            )}
+                            {socialsData.skype && (
+                                <a
+                                    href={socialsData.skype}
+                                    target='_blank'
+                                    rel='noreferrer'
+                                    className={classes.socialIcon}
+                                >
+                                    <FaSkype aria-label='Skype' />
+                                </a>
+                            )}
+                            
                         </div>
                     </div>
                 </div>
